@@ -11,14 +11,14 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="45.0" layoutY="26.0" text="Historial de PingPongChats Privados y no vendidos a empresas como Amazon">
+      <Label layoutX="45.0" layoutY="26.0" text="Historial de Chats">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
       <ListView layoutX="-3.0" layoutY="61.0" prefHeight="263.0" prefWidth="600.0" />
-      <RadioButton layoutX="22.0" layoutY="334.0" mnemonicParsing="false" text="Abrir con Modelo ClaudIA" />
-      <CheckBox layoutX="235.0" layoutY="333.0" mnemonicParsing="false" text=" Modo Locura" />
+      <RadioButton layoutX="22.0" layoutY="334.0" mnemonicParsing="false" text="Abrir con Modelo UNA" />
+      <CheckBox layoutX="235.0" layoutY="333.0" mnemonicParsing="false" text=" Modo Oscuro" />
       <CheckBox layoutX="355.0" layoutY="333.0" mnemonicParsing="false" text=" Modo Incognito" />
       <Label layoutX="22.0" layoutY="366.0" text="Buscar por rango de fechas">
          <font>
