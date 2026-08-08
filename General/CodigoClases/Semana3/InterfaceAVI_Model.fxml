@@ -9,7 +9,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="45.0" layoutY="24.0" text="Bienvenido a PingPongGPT UNA patrocinado">
+      <Label layoutX="45.0" layoutY="24.0" text="Bienvenido a AVI UNA">
          <font>
             <Font name="System Bold Italic" size="24.0" />
          </font>
@@ -19,8 +19,8 @@
             <Font name="System Italic" size="18.0" />
          </font>
       </Label>
-      <ComboBox fx:id="cbModel" layoutX="170.0" layoutY="123.0" prefHeight="25.0" prefWidth="261.0" promptText="PingPong Models" />
-      <Button fx:id="btnOp1" layoutX="189.0" layoutY="200.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="PingPongGPT" />
-      <Button layoutX="189.0" layoutY="159.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="PongPing ClaudIA" />
+      <ComboBox fx:id="cbModel" layoutX="170.0" layoutY="123.0" prefHeight="25.0" prefWidth="261.0" promptText="AVI Modelos" />
+      <Button fx:id="btnOp1" layoutX="189.0" layoutY="200.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="AVI - UNA" />
+      <Button layoutX="189.0" layoutY="159.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="223.0" text="AVI v3.6" />
    </children>
 </Pane>
