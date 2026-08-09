@@ -1,5 +1,159 @@
 # Scene Builder
+> JavaFX Scene Builder is a visual layout tool that lets users quickly design JavaFX application user interfaces, without coding. Users can drag and drop UI components to a work area, modify their properties, apply style sheets, and the FXML code for the layout that they are creating is automatically generated in the background. The result is an FXML file that can then be combined with a Java project by binding the UI to the application’s logic.
+---
+# Components
 
+## Containers
+
+### Accordion
+### AnchorPane
+### BorderPane
+### ButtonBar
+### DialogPane
+### FlowPane
+### GridPane
+### HBox
+### Pane
+### ScrollPane
+### SpliPane
+#### Vertical
+#### Horizontal
+### StackPane
+### Tab
+### TabPane
+### TextFlow
+### TilePane
+### TitledPane
+### ToolBar
+### VBox
+---
+## Controls
+### Button
+### CheckBox
+### ChoiceBox
+### ColorPicker
+### ComboBox
+### DatePicker
+### HTMLEditor
+### Hyperlink
+### ImageView
+### Label
+### ListView
+### MediaView
+### MenuBar
+### MenuButton
+### Pagination
+### PasswordField
+### ProgressBar
+### ProgressIndicator
+### RadioButton
+### ScrollBar
+#### Vertical
+#### Horizontal
+### Separator
+#### Vertical
+#### Horizontal
+### Slider
+#### Vertical
+#### Horizontal
+### Spinner
+### SplitMenuButton
+### TableColumn
+### TableView
+### TextArea
+### TextField
+### ToggleButton
+### TreeTableColumn
+### TreeTableView
+### TreeView
+### WebView
+---
+## Gluon
+### AppBar
+### AutoCompleteTextField
+### Avatar
+### ButtomNavigation
+### ButtomNavigationButton
+### CardPane
+### CharmListView
+### Chip
+### CollapsedPanel
+### DropdownButton
+### ExpandedPanel
+### ExpansionPanel
+### ExpansionPanelContainer
+### Icon
+### Layer
+### NavigationDrawer
+### ProgressBar
+### ProgressIndicator
+### SettingsPane
+### SplashView
+### TextField
+### ToggleButtonGroup
+### View
+---
+## Menu
+### CheckMenuItem
+### ContextMenu
+### CustomMenuItem
+### Menu
+### MenuItem
+### RadioMenuItem
+### SeparatorMenuItem
+---
+## Miscellaneous
+### Canvas
+### Group
+### Region
+### Scene
+### Stage
+### SubScene
+### SwingNode
+### ToolTip
+---
+## Shapes
+### Arc
+### ArcTo
+### Box
+### Circle
+### ClosePath
+### CubicCurve
+### CubicCurveTo
+### Cylinder
+### Ellipse
+### HLineTo
+### Line
+### LineTo
+### MeshView
+### MoveTo
+### Path
+### Polygon
+### Polyline
+### QuadCurve
+### QuadCurveTo
+### Rectangle
+### Sphere
+### SVGPath
+### Text
+### VLineTo
+---
+## Charts
+### AreaChart
+### BarChart
+### BubbleChart
+### LineChart
+### PieChart
+### ScatterChart
+### StackedAreaChart
+### StackedBarChart
+---
+## 3D
+### AmbientLight
+### ParallelCamera
+### PerspectiveCamera
+### PointLight
+---
 # Regex101
 
 # Expresiones Regulares
