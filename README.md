@@ -53,7 +53,7 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 ## 📝 Tareas
 > Instrucciones y soluciones de las tareas asignadas.
 
-- [Tarea 1](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Tareas/Tarea%201/Instrucciones.md)
-- [Tarea 2](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Tareas/Tarea%202/Instrucciones.md)
+- [Tarea 1](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/Tareas/Tarea%201)
+- [Tarea 2](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Tareas/Tarea%202)
 
 ---
