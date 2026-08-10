@@ -76,7 +76,7 @@ Esta clave queda guardada en el archivo de configuración de esa Run Configurati
 7. Haga clic derecho sobre la carpeta `java` > `New > Package`, y escriba `una.eif206.avi`. Esto crea el paquete raíz del proyecto (las carpetas `una/eif206/avi` se generan automáticamente).
 8. Reemplace todo el contenido de `pom.xml` (el archivo que está en la raíz del proyecto, no dentro de `src`) por este:
 
-\`\`\`xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -111,7 +111,7 @@ Esta clave queda guardada en el archivo de configuración de esa Run Configurati
  </plugins>
  </build>
 </project>
-\`\`\`
+```
 
 Esto le agrega al proyecto dos cosas: la librería `org.json` (para construir y leer JSON sin tener que hacerlo a mano con Strings) y el plugin `exec-maven-plugin` (para poder ejecutar la aplicación de consola con un solo comando). Después de guardar el archivo, IntelliJ va a mostrar un ícono de "recargar" Maven (una M con una flecha) en la esquina superior derecha del editor — haga clic ahí para que descargue la nueva dependencia.
 
@@ -119,7 +119,7 @@ Esto le agrega al proyecto dos cosas: la librería `org.json` (para construir y 
 
 Dentro del paquete `una.eif206.avi` que ya creó, haga clic derecho > `New > Package`, y escriba `service` (esto crea `una.eif206.avi.service`). Luego, clic derecho sobre ese nuevo paquete > `New > Java Class`, escriba `GeminiService`, y reemplace el contenido del archivo generado por este código completo:
 
-\`\`\`java
+```java
 package una.eif206.avi.service;
 
 import org.json.JSONArray;
@@ -187,7 +187,7 @@ public class GeminiService {
  return partes.getJSONObject(0).getString("text");
  }
 }
-\`\`\`
+```
 
 ### 4.1 Qué hace cada parte
 
@@ -202,7 +202,7 @@ public class GeminiService {
 
 Haga clic derecho sobre el paquete `una.eif206.avi` (un nivel arriba de `service`) > `New > Java Class`, escriba `Main`, y reemplace el contenido del archivo generado por este:
 
-\`\`\`java
+```java
 package una.eif206.avi;
 
 import una.eif206.avi.service.GeminiService;
@@ -237,7 +237,7 @@ public class Main {
  lector.close();
  }
 }
-\`\`\`
+```
 
 El programa usa un `Scanner` para leer lo que el usuario escribe en la consola (`lector.nextLine()`), se lo pasa a `geminiService.enviarMensaje(...)`, e imprime la respuesta con `System.out.println(...)`. El ciclo `while` se repite hasta que la persona escribe "salir".
 
@@ -245,13 +245,13 @@ El programa usa un `Scanner` para leer lo que el usuario escribe en la consola (
 
 Desde la terminal, ubicado en la raíz del proyecto, ejecute:
 
-\`\`\`
+```
 mvn compile exec:java
-\`\`\`
+```
 
 Debe ver algo similar a esto (el texto exacto de la respuesta va a variar):
 
-\`\`\`
+```
 === AVI - Agente Virtual Inteligente (consola) ===
 Escriba su pregunta (o 'salir' para terminar).
 
@@ -265,7 +265,7 @@ comportamiento (metodos)...
 > salir
 
 Hasta luego!
-\`\`\`
+```
 
 Si en vez de esto ve un error, revise primero que la variable de entorno `GEMINI_API_KEY` esté bien configurada en la misma terminal desde la que ejecuta el comando.
 
@@ -277,7 +277,7 @@ Con el proyecto ya funcionando, deben ampliarlo agregando herencia: crear una je
 
 Un repaso rápido de cómo se declara una clase abstracta con un método abstracto, y una subclase que la extiende (este ejemplo es genérico, no es el que deben construir):
 
-\`\`\`java
+```java
 public abstract class Animal {
  private final String nombre;
 
@@ -297,7 +297,7 @@ public class Perro extends Animal {
  @Override
  public String hacerSonido() { return "Guau"; }
 }
-\`\`\`
+```
 
 ### 7.2 Lo que deben construir
 
