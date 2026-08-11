@@ -112,6 +112,10 @@ Controller: Funcionalidad - involucra todas las funciones que tiene este vehícu
 4. Cambio Marchas
 5. Freno de mano
 
+## ActionEvent
+
+Es el que controla los eventos y que se dispare todos los movimientos de la interfaz gráfica
+
 
 
 
