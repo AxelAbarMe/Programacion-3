@@ -59,7 +59,7 @@ Build genera plugins, es lo que une javafx con Maven.
 
 Se importan librerias como Parent para evitar que se generen multiples logos de la misma app en la barra de tareas.
 
-```
+```java
 package avi;
 
 import javafx.application.Application;
