@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="textResp" accessibleText="Historial de AVI UNA" editable="false" layoutX="14.0" layoutY="106.0" prefHeight="408.0" prefWidth="574.0" text="Esperando consulta del usuario">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="textoPreg" layoutX="14.0" layoutY="541.0" prefHeight="65.0" prefWidth="498.0" />
+      <Button fx:id="btnenviar" layoutX="512.0" layoutY="541.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="77.0" text="Button" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" underline="true" />
+      <Label fx:id="lbTitle" layoutX="79.0" layoutY="23.0" prefHeight="45.0" prefWidth="445.0" text="AVI UNA" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbsubtiitle" layoutX="169.0" layoutY="74.0" text="Versión 3.6">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
