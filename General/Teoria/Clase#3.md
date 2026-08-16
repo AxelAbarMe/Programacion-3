@@ -1,4 +1,4 @@
-# Modificar Pom
+> Modificar Pom requerido en exámenes.
 
 # JavaFX
 
