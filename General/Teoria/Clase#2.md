@@ -497,3 +497,331 @@ Fuente de luz puntual que emite en todas direcciones desde una posición especí
 - **Clases personalizadas:** `[abc]` (cualquiera de esos caracteres), `[^abc]` (negación), `[a-z]` (rango).
 - **Lookahead/Lookbehind:** `(?=...)`, `(?!...)`, `(?<=...)`, `(?<!...)` — validan contexto sin consumir caracteres.
 - **Uso en Java:** clases `java.util.regex.Pattern` y `Matcher`; métodos comunes `matches()`, `find()`, `group()`, `replaceAll()`.
+
+# Ejemplo de Implementación: Navegación entre Pantallas con FXML (Estilo Interfaz de IA)
+
+A continuación se muestra un ejemplo completo de dos pantallas conectadas mediante `FXMLLoader`: una pantalla inicial con un `ComboBox`, texto descriptivo y un botón de inicio; y una segunda pantalla tipo "chat" con un área de texto no editable (respuestas), un campo de entrada para el usuario, un botón de envío y un botón para regresar.
+
+## Estructura del proyecto
+
+```
+src/
+ └── com/app/
+     ├── MainApp.java
+     ├── PantallaInicioController.java
+     ├── PantallaChatController.java
+resources/
+ └── com/app/
+     ├── pantalla_inicio.fxml
+     └── pantalla_chat.fxml
+```
+
+## Pantalla 1: Selección e inicio (`pantalla_inicio.fxml`)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.app.PantallaInicioController"
+      alignment="CENTER" spacing="15">
+    <padding>
+        <Insets top="30" bottom="30" left="30" right="30"/>
+    </padding>
+
+    <Label text="Bienvenido al Asistente Virtual" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="Seleccione el modelo con el que desea conversar:"/>
+
+    <ComboBox fx:id="comboModelo" promptText="Seleccione un modelo"/>
+
+    <Button fx:id="btnIniciar" text="Iniciar conversación" onAction="#irAPantallaChat"/>
+</VBox>
+```
+
+## Controlador de la Pantalla 1 (`PantallaInicioController.java`)
+
+```java
+package com.app;
+
+import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ComboBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class PantallaInicioController {
+
+    @FXML
+    private ComboBox<String> comboModelo;
+
+    // Se ejecuta automáticamente al cargar el FXML
+    @FXML
+    public void initialize() {
+        comboModelo.setItems(FXCollections.observableArrayList(
+                "Modelo Básico",
+                "Modelo Avanzado",
+                "Modelo Experimental"
+        ));
+    }
+
+    @FXML
+    private void irAPantallaChat(ActionEvent event) {
+        String modeloSeleccionado = comboModelo.getValue();
+
+        if (modeloSeleccionado == null) {
+            Alert alerta = new Alert(Alert.AlertType.WARNING, "Debe seleccionar un modelo antes de continuar.");
+            alerta.showAndWait();
+            return;
+        }
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("pantalla_chat.fxml"));
+            Parent root = loader.load();
+
+            // Se pasa el modelo seleccionado al controlador de la siguiente pantalla
+            PantallaChatController controller = loader.getController();
+            controller.setModeloSeleccionado(modeloSeleccionado);
+
+            Stage stage = (Stage) comboModelo.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Conversación - " + modeloSeleccionado);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+## Pantalla 2: Conversación tipo chat (`pantalla_chat.fxml`)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.app.PantallaChatController">
+
+    <top>
+        <Button fx:id="btnVolver" text="&lt; Volver" onAction="#volverAPantallaInicio">
+            <BorderPane.margin>
+                <Insets top="10" left="10" bottom="5"/>
+            </BorderPane.margin>
+        </Button>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true">
+            <TextArea fx:id="areaRespuestas" editable="false" wrapText="true"
+                      prefHeight="400" style="-fx-font-size: 14px;"/>
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <padding>
+                <Insets top="10" bottom="10" left="10" right="10"/>
+            </padding>
+            <TextField fx:id="campoEntrada" promptText="Escriba su mensaje..." HBox.hgrow="ALWAYS"/>
+            <Button fx:id="btnEnviar" text="Enviar" onAction="#enviarMensaje"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
+```
+
+## Controlador de la Pantalla 2 (`PantallaChatController.java`)
+
+```java
+package com.app;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class PantallaChatController {
+
+    @FXML
+    private TextArea areaRespuestas;
+
+    @FXML
+    private TextField campoEntrada;
+
+    private String modeloSeleccionado;
+
+    // Recibe el dato enviado desde la pantalla anterior
+    public void setModeloSeleccionado(String modelo) {
+        this.modeloSeleccionado = modelo;
+        areaRespuestas.appendText("[Sistema] Conversación iniciada con: " + modelo + "\n\n");
+    }
+
+    @FXML
+    private void enviarMensaje(ActionEvent event) {
+        String mensaje = campoEntrada.getText().trim();
+
+        if (mensaje.isEmpty()) {
+            return;
+        }
+
+        areaRespuestas.appendText("Usuario: " + mensaje + "\n");
+
+        // Simulación de respuesta (aquí se conectaría con la lógica real)
+        String respuesta = generarRespuestaSimulada(mensaje);
+        areaRespuestas.appendText(modeloSeleccionado + ": " + respuesta + "\n\n");
+
+        campoEntrada.clear();
+    }
+
+    private String generarRespuestaSimulada(String entrada) {
+        return "Procesando su mensaje de " + entrada.length() + " caracteres...";
+    }
+
+    @FXML
+    private void volverAPantallaInicio(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("pantalla_inicio.fxml"));
+            Stage stage = (Stage) campoEntrada.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Inicio");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+## Clase principal (`MainApp.java`)
+
+```java
+package com.app;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("pantalla_inicio.fxml"));
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setTitle("Inicio");
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+```
+
+---
+
+# Ejemplos de Expresiones Regulares (Regex) en Java
+
+## Patrones comunes
+
+| Propósito | Expresión regular | Coincide con |
+|:---|:---|:---|
+| Correo electrónico | `^[\w.+-]+@[\w-]+\.[a-zA-Z]{2,}$` | `usuario@dominio.com` |
+| Número telefónico (CR) | `^\d{4}-\d{4}$` | `8888-1234` |
+| Solo letras (sin tildes) | `^[a-zA-Z]+$` | `Hola` |
+| Contraseña segura | `^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$` | Mínimo 8 caracteres, mayúscula, minúscula, número y símbolo |
+| Fecha formato `dd/mm/aaaa` | `^(0[1-9]\|[12]\d\|3[01])/(0[1-9]\|1[0-2])/\d{4}$` | `15/08/2026` |
+| Número decimal positivo | `^\d+(\.\d{1,2})?$` | `1234.56` |
+| Cédula costarricense | `^\d{1}-\d{4}-\d{4}$` | `1-2345-6789` |
+| URL básica | `^(https?://)?([\w-]+\.)+[\w-]{2,}(/\S*)?$` | `https://www.ejemplo.com/pagina` |
+
+## Uso en Java con `Pattern` y `Matcher`
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class ValidadorRegex {
+
+    public static void main(String[] args) {
+
+        // Validar correo electrónico
+        String correo = "usuario@dominio.com";
+        Pattern patronCorreo = Pattern.compile("^[\\w.+-]+@[\\w-]+\\.[a-zA-Z]{2,}$");
+        Matcher matcherCorreo = patronCorreo.matcher(correo);
+        System.out.println("¿Correo válido?: " + matcherCorreo.matches());
+
+        // Extraer todos los números de un texto
+        String texto = "Tengo 3 gatos, 12 peces y 5 perros";
+        Pattern patronNumeros = Pattern.compile("\\d+");
+        Matcher matcherNumeros = patronNumeros.matcher(texto);
+        while (matcherNumeros.find()) {
+            System.out.println("Número encontrado: " + matcherNumeros.group());
+        }
+
+        // Reemplazar texto usando grupos capturados
+        String fecha = "2026-08-16";
+        String fechaFormateada = fecha.replaceAll(
+                "(\\d{4})-(\\d{2})-(\\d{2})",
+                "$3/$2/$1"
+        );
+        System.out.println("Fecha reformateada: " + fechaFormateada); // 16/08/2026
+
+        // Validar contraseña segura
+        String contrasena = "Segura123!";
+        String patronContrasena = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
+        System.out.println("¿Contraseña segura?: " + contrasena.matches(patronContrasena));
+    }
+}
+```
+
+## Uso de Regex en un `TextFormatter` de JavaFX
+
+Permite restringir en tiempo real lo que el usuario puede escribir en un `TextField` (por ejemplo, aceptar solo números):
+
+```java
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
+import java.util.regex.Pattern;
+
+public class CampoSoloNumeros {
+
+    public static TextFormatter<String> crearFormatterNumerico() {
+        Pattern patron = Pattern.compile("\\d*");
+
+        return new TextFormatter<>(change -> {
+            String textoNuevo = change.getControlNewText();
+            if (patron.matcher(textoNuevo).matches()) {
+                return change; // se acepta el cambio
+            }
+            return null; // se rechaza el cambio
+        });
+    }
+
+    // Uso:
+    // TextField campo = new TextField();
+    // campo.setTextFormatter(crearFormatterNumerico());
+}
+```
+
