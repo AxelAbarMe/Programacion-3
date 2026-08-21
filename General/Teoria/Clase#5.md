@@ -36,6 +36,7 @@ Todo lo de la base de datos debe de estar en el DTO, pero no todo lo del DTO deb
 
 Dataset de la base de datos tal cuál como van los datos, el que mueve los dataset son los DTO, se mapea el dataset que viene de la base de datos hacia DTO por razones de seguridad, para eliminar los estándares, la capa Lógica es la encargada de dicho mapeo.
 
+Todos los DTO desapareen al cerrar la app para que el cierre se haga en Datos, las capas de lógica, servicios y DTO no deben de conocer que exista una base de datos.
 
 
 
