@@ -11,7 +11,9 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 - [Clase 2 { JavaFX Scene Builder }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%232.md) — Documentación de Componentes con JavaFX Scene Builder.
 - [Clase 3 { JavaFX }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%233.md) - Configuración de JavaFX básico
 - [Clase 4 { Eventos }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%234.md) - Aplicaciones dirigidas por Eventos
-- [Clase 5 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%235.md) - Pendiente
+- [Clase 5 { MVC }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%235.md) - DTO, Datos, Lógica y Servicios
+- [Clase 6 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%236.md) - Pendiente
+- [Clase 7 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%237.md) - Pendiente
 
 ---
 
@@ -21,6 +23,7 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 - [Semana 3](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/CodigoClases/Semana3)
 - [Semana 4](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/CodigoClases/Semana4)
 - [Semana 5](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/CodigoClases/Semana5)
+- [Semana 6](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/CodigoClases/Semana6)
 
 ---
 
