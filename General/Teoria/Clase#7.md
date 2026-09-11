@@ -14,6 +14,14 @@ Similar al ejercicio de la practica de examen
 
 Se entrega el proyecto el 16
 
+@test
+@beforeAll
+@beforeEach
+
+plugins QA surefire junit pom
+
+test unificados en los @test
+
 
 
 
