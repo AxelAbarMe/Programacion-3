@@ -1,9 +1,5 @@
 # Manual — Semana 2: Cómo integrar Gemini a un proyecto Java, paso a paso
 
-**UNIVERSIDAD NACIONAL · Escuela de Informática**
-**EIF206 · Programación 3 · II Ciclo 2026**
-**Prof. Deivert Guiltrichs Cordero**
-
 ## 1. Objetivo
 
 Este manual muestra, con código completo y explicado, cómo conectar una aplicación Java a la API de Gemini: cómo se arma la petición, cómo se lee la respuesta, y cómo hacer que el programa le haga una pregunta escrita por el usuario y muestre la respuesta en la consola. Al final hay un reto para entregar: ampliar este mismo proyecto agregando herencia.
