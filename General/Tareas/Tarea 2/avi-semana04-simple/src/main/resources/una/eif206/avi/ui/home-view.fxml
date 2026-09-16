@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.String?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="una.eif206.avi.controllers.HomeViewController"
+      alignment="CENTER"
+      spacing="14"
+      prefHeight="640.0" prefWidth="480.0">
+   <padding>
+      <Insets top="40.0" right="40.0" bottom="40.0" left="40.0" />
+   </padding>
+   <children>
+      <Label text="AVI" style="-fx-font-size: 30px; -fx-font-weight: bold;" />
+      <Label text="Tu asistente virtual inteligente" />
+      <Separator />
+      <ComboBox fx:id="comboPersonalidad" promptText="Elija el modo del agente">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Tutor académico" />
+               <String fx:value="Soporte técnico" />
+               <String fx:value="Conversación libre" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Button fx:id="botonNuevaConversacion" mnemonicParsing="false" text="Nueva conversación" />
+      <Button fx:id="botonVerHistorial" mnemonicParsing="false" text="Ver historial de chats" />
+   </children>
+</VBox>

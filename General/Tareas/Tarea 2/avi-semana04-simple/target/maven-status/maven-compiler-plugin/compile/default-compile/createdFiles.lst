@@ -1,0 +1,14 @@
+una\eif206\avi\controllers\LoginViewController.class
+una\eif206\avi\controllers\ChatListViewController.class
+una\eif206\avi\service\UsuarioService.class
+una\eif206\avi\logica\LoginLogica.class
+una\eif206\avi\service\GeminiService.class
+una\eif206\avi\Launcher.class
+una\eif206\avi\controllers\HomeViewController.class
+una\eif206\avi\datos\LoginJsonDatos.class
+una\eif206\avi\controllers\ChatViewController.class
+una\eif206\avi\App.class
+una\eif206\avi\datos\UsuarioJsonDatos.class
+una\eif206\avi\dto\LoginDTO.class
+una\eif206\avi\dto\UsuarioDTO.class
+una\eif206\avi\datos\UsuarioXmlDatos.class
