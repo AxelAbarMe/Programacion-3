@@ -1,0 +1,107 @@
+{"intentos": [
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:43:11",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:43:15",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:43:16",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:43:26",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:43:38",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:43:39",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:44:47",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:44:50",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:44:52",
+        "fuente": "JSON",
+        "usuario": "1"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:45:58",
+        "fuente": "JSON",
+        "usuario": "admin"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Exitoso",
+        "hora": "08:46:01",
+        "fuente": "JSON",
+        "usuario": "admin"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:55:26",
+        "fuente": "JSON",
+        "usuario": "12"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:55:28",
+        "fuente": "JSON",
+        "usuario": "12"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Fallido",
+        "hora": "08:55:28",
+        "fuente": "JSON",
+        "usuario": "12"
+    },
+    {
+        "fecha": "14/09/2026",
+        "resultado": "Exitoso",
+        "hora": "08:55:36",
+        "fuente": "JSON",
+        "usuario": "admin"
+    }
+]}
