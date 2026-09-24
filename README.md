@@ -14,7 +14,8 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 - [Clase 5 { MVC }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%235.md) - DTO, Datos, Lógica y Servicios
 - [Clase 6 { MVC }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%236.md) - MVC flujo
 - [Clase 7 { Testing QA }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%237.md) - Testing Unitaria y Testing Integración
-- [Clase 8 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%238.md) - Pendiente
+- [Clase 8 { Bases de datos }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%238.md) - Bases de datos relacionales y normalización
+- [Clase 9 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%239.md) - Pendiente
 
 ---
 
