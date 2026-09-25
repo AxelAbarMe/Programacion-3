@@ -64,5 +64,6 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 
 - [Tarea 1](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/Tareas/Tarea%201)
 - [Tarea 2](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Tareas/Tarea%202)
+- [Tarea 3](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Tareas/Tarea%203)
 
 ---
