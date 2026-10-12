@@ -17,7 +17,11 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 - [Clase 8 { Bases de datos }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%238.md) - Bases de datos relacionales y normalización
 - [Clase 9 { Bases de datos }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%239.md) - Bases de datos relacionales: Ejemplo
 - [Clase 10 { SQL }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6010.md) - SQL básico
-- [Clase 11 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6010.md) - Pendiente
+- [Clase 11 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6011.md) - Pendiente
+- [Clase 12 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6012.md) - Pendiente
+- [Clase 13 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6013.md) - Pendiente
+- [Clase 14 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6014.md) - Pendiente
+- [Clase 15 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6015.md) - Pendiente
 
 ---
 
@@ -28,13 +32,7 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 - [Semana 4](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/CodigoClases/Semana4)
 - [Semana 5](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/CodigoClases/Semana5)
 - [Semana 6](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/CodigoClases/Semana6)
-
----
-
-## 🧪 Labs
-> Enunciados de laboratorio del curso.
-
-- [Lab 1](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Labs/_.md)
+- [Semana 13](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/CodigoClases/Semana13)
 
 ---
 
@@ -54,18 +52,12 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 
 ---
 
-## ❓ Quiz
-> Enunciados de quices del curso.
-
-- [Quiz 1](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Quiz/_.md)
-
----
-
 ## 📝 Tareas
 > Instrucciones y soluciones de las tareas asignadas.
 
 - [Tarea 1](https://github.com/AxelAbarMe/Programacion-3/tree/main/General/Tareas/Tarea%201)
 - [Tarea 2](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Tareas/Tarea%202)
 - [Tarea 3](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Tareas/Tarea%203)
+- [Tarea 4](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Tareas/Tarea%204)
 
 ---
