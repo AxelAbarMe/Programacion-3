@@ -17,11 +17,16 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 - [Clase 8 { Bases de datos }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%238.md) - Bases de datos relacionales y normalización
 - [Clase 9 { Bases de datos }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%239.md) - Bases de datos relacionales: Ejemplo
 - [Clase 10 { SQL }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6010.md) - SQL básico
-- [Clase 11 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6011.md) - Pendiente
-- [Clase 12 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6012.md) - Pendiente
-- [Clase 13 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6013.md) - Pendiente
-- [Clase 14 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6014.md) - Pendiente
-- [Clase 15 { }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6015.md) - Pendiente
+- [Clase 11 { JDBC }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6011.md) - Conexión de Java con MySQL y acceso a datos
+- [Clase 12 { SQL Avanzado }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6012.md) - Procedimientos almacenados, funciones y triggers
+- [Clase 13 { Hilos }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6013.md) - Clases activas, procesos e hilos
+- [Clase 14 { Sockets }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6014.md) - Comunicación entre componentes remotos con sockets
+- [Clase 15 { Sockets e Hilos }](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/Teoria/Clase%23%6015.md) - Servidor de expertos con sockets, hilos y HTTP
+
+> Resúmenes completos de teoría para cada examen parcial.
+
+- [Resumen I Parcial](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/ResumenIParcial.md) — Teoría del primer parcial.
+- [Resumen II Parcial](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/ResumenIIParcial.md) — Bases de datos, JDBC, hilos, sockets y HTTP.
 
 ---
 
