@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import java.lang.String?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="una.eif206.avi.controllers.ChatListViewController"
+            prefHeight="640.0" prefWidth="480.0">
+   <padding>
+      <Insets top="12.0" right="12.0" bottom="12.0" left="12.0" />
+   </padding>
+   <top>
+      <Label text="Historial de conversaciones" style="-fx-font-size: 18px; -fx-font-weight: bold;" BorderPane.alignment="CENTER_LEFT" />
+   </top>
+   <center>
+      <ListView fx:id="listaChats" BorderPane.alignment="CENTER">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Consulta sobre herencia en Java" />
+               <String fx:value="Ayuda con arquitectura MVC" />
+               <String fx:value="Dudas del Proyecto #1" />
+            </FXCollections>
+         </items>
+      </ListView>
+   </center>
+   <bottom>
+      <HBox spacing="8.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="8.0" />
+         </padding>
+         <children>
+            <Button fx:id="botonVolver" mnemonicParsing="false" text="← Volver" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="botonNuevaDesdeHistorial" mnemonicParsing="false" text="Nueva conversación" />
+            <Button fx:id="botonAbrirChat" mnemonicParsing="false" text="Abrir" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

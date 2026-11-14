@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="una.eif206.avi.controllers.ExpertoViewController"
+        prefHeight="650.0"
+        prefWidth="700.0">
+
+    <padding>
+        <Insets
+                top="15"
+                right="15"
+                bottom="15"
+                left="15"/>
+    </padding>
+
+
+    <top>
+
+        <VBox spacing="5">
+
+            <Label
+                    text="Consulta con experto"
+                    style="-fx-font-size: 22px;
+                           -fx-font-weight: bold;"/>
+
+            <Label
+                    fx:id="etiquetaEstadoServidor"
+                    text="Iniciando servidor..."
+                    style="-fx-text-fill: #555555;"/>
+
+        </VBox>
+
+    </top>
+
+
+    <center>
+
+        <VBox spacing="8">
+
+            <padding>
+                <Insets top="15"/>
+            </padding>
+
+
+            <Label
+                    text="Pregunta del usuario"
+                    style="-fx-font-weight: bold;"/>
+
+            <TextArea
+                    fx:id="areaPregunta"
+                    editable="false"
+                    wrapText="true"
+                    prefRowCount="4"/>
+
+
+            <Label
+                    text="Respuesta propuesta por el AVI"
+                    style="-fx-font-weight: bold;"/>
+
+            <TextArea
+                    fx:id="areaRespuestaAVI"
+                    editable="false"
+                    wrapText="true"
+                    prefRowCount="7"/>
+
+
+            <Label
+                    text="Validación / respuesta del experto"
+                    style="-fx-font-weight: bold;"/>
+
+            <TextArea
+                    fx:id="areaRespuestaExperto"
+                    wrapText="true"
+                    promptText="Escriba aquí la respuesta o validación..."
+                    prefRowCount="6"/>
+
+
+            <Button
+                    fx:id="botonEnviarRespuesta"
+                    text="Enviar respuesta al usuario"
+                    disable="true"/>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>
