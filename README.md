@@ -26,7 +26,7 @@ Repositorio de teoría, código de clases, labs, prácticas, proyectos, quices y
 > Resúmenes completos de teoría para cada examen parcial.
 
 - [Resumen I Parcial](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/ResumenIParcial.md) — Teoría del primer parcial.
-- [Resumen II Parcial](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/ResumenIIParcial.md) — Bases de datos, JDBC, hilos, sockets y HTTP.
+- [Resumen II Parcial](https://github.com/AxelAbarMe/Programacion-3/blob/main/General/ResumenIIParcial-Deivert.md) — Bases de datos, JDBC, hilos, sockets y HTTP.
 
 ---
 
